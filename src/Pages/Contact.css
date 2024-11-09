@@ -1,0 +1,148 @@
+/* Map Section */
+.custom-map-section {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-container h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0f223d;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form textarea,
+  .contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 0px;
+  }
+  
+  .contact-form textarea {
+    height: 180px;
+    resize: none;
+  }
+  
+  .contact-form .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+ /* CSS for the Submit Button */
+.contact-submit {
+  width: 180px;
+  padding: 10px;
+  font-size: 1em;
+  color: #33D4D6;
+  border: 2px solid #33D4D6;
+  background: none;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: #33D4D6;
+  color: white;
+}
+
+  
+  .contact-container {
+    font-family: Arial, sans-serif;
+    max-width: 900px; /* Sets the maximum width for the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+  }
+  
+  .contact-content {
+    display: flex;
+    gap: 40px; /* Space between the form and the contact info */
+    align-items: flex-start; /* Aligns items at the top */
+  }
+  
+  .contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+    color: #7a7a7a;
+    min-width: 30px;
+    text-align: center;
+  }
+  
+  .info-item-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item strong {
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 3px;
+  }
+  
+  .info-item p {
+    margin: 0;
+    color: #7a7a7a;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  @media(max-width:760px){
+    .custom-map-section{
+      width: 100vw;
+      height: auto;
+    }
+    .contact-container{
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    }
+  }

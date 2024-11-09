@@ -1,0 +1,73 @@
+/* Container for the entire about section with background */
+.about-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-bottom: 100px;
+  }
+  
+  /* Overlay effect for background image */
+  .about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content container positioning */
+  .about-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+  }
+  
+  /* Heading style */
+  .about-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 130px;
+  }
+  
+  /* Button style */
+  .apply-button {
+    background-color: transparent;
+    border: 2px solid #00bfff; /* Matches the theme color */
+    color: #00bfff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #00bfff;
+    color: #fff;
+  }
+  
+  /* Contact info styling */
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .phone-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,247 @@
+.text-container{
+    width: 90vw;
+    margin-left: 50px;
+    margin-bottom: 100px;
+  }
+  
+
+.content-container {
+    max-width: 90vw;
+    margin: 20px auto; 
+    padding: 24px; 
+    font-family: 'Arial', sans-serif;
+  }
+
+  
+  .title {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .aligned-section {
+    display: flex;
+    height: 100px;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between image and text */
+  }
+  
+  .aligned-image {
+    width: 180px;
+    height: 100px;
+    object-fit: cover; /* Make sure the image scales properly */
+  }
+  
+  .aligned-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    color: #ff6600;
+  }
+  
+  .strikethrough {
+    text-decoration: line-through;
+    color: #ff6600;
+  }
+  
+  .superscript {
+    vertical-align: super;
+    font-size: 0.8em;
+    color: #ff6600;
+  }
+  
+  .subscript {
+    vertical-align: sub;
+    font-size: 0.8em;
+    color: #ff6600;
+  }
+  
+  .content-right{
+    max-width: 90vw;
+    margin: 20px auto; 
+    padding: 24px; 
+    font-family: 'Arial', sans-serif;
+  }
+
+  .title-right{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-left: 900px;
+  }
+  .aligned-section-right{
+    display: flex;
+    height: 100px;
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-direction: row-reverse;
+  }
+  .aligned-text-right{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+
+
+
+
+  .main{
+     width: 90vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content:center ;
+     flex-direction: column;
+     margin-top: 300px;
+     margin-left: 45px;
+  }
+  .one{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .one img{
+    width: 30vw;
+  }
+  .two{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main h1{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  @media(max-width:760px){
+    .about-section{
+      width: 100vw;
+      height: auto;
+    }
+    .text-container{
+      width: 100vw;
+      height: auto;
+      margin-left: 0px;
+      padding: 10px;
+    }
+    .content-container{
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .aligned-section{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-right{
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .title-right{
+      margin-left: 0px;
+      width: 100%;
+    }
+    .aligned-section-right{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .main{
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+    }
+    
+    .one{
+      width: 100%;
+      display:  flex;
+      flex-direction: column;
+      margin-top: 150px;
+    }
+    .one img{
+      width: 90%;
+      padding: 10px;
+    }
+    .two{
+      width: 100%;
+      display:  flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 150px;
+    }
+    .two img{
+      width: 90%;
+      padding: 10px;
+    }
+  }
+
+  @media(min-width:780px) and (max-width:1050px){
+  .content-container{
+    width: 100vw;
+    height: auto;
+  }
+  .content-right{
+    width: 100vw;
+    height: auto;
+  }
+  .title-right{
+ margin-left: 0px;
+  }
+
+  .main{
+    width: 100vw;
+    height: auto;
+    margin-left: 0px;
+    overflow-x: hidden;
+  }
+  .one{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .two{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .one img{
+    width: 30%;
+      padding: 10px;
+  }
+  .two img{
+    width: 30%;
+      padding: 10px;
+  }
+  }

@@ -1,0 +1,230 @@
+.home-container {
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(70, 79, 97, 0.75); /* Semi-transparent black for readability */
+    z-index: 1; /* Ensures it stays behind text but over the background */
+}
+
+.banner-image {
+    width: 100%; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Cover the entire area */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 0; /* Ensure it’s the background */
+}
+
+.content {
+    position: relative; /* Position content relative for stacking */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center content vertically */
+    width: 100vw; /* Full width */
+    z-index: 2; /* Ensure content is above overlay */
+    padding: 20px; /* Add padding */
+    margin-top: 150px;
+}
+
+.text-section {
+    color: #fff;
+    width: 50vw; /* Use max width for responsiveness */
+    text-align: center; /* Center text for better alignment */
+}
+
+.main-heading {
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button {
+    width: 100%; /* Full width for consistency */
+    padding: 12px;
+    background-color: #20b2aa; /* Same color as .cta-button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px; /* Add space above */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.continue-button:hover {
+    background-color: #1e8f87; /* Slightly darker shade on hover */
+}
+
+
+.form-section {
+    background: white;
+    padding: 20px; /* Adjust padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 35vw; /* Use 90% of the viewport width */
+    height: auto; /* Allow height to adjust based on content */
+    overflow-y: auto; /* Scroll if necessary */
+    z-index: 2; /* Above overlay */
+    margin-top: 20px; /* Margin for spacing */
+    height: 62vh;
+}
+
+.form-heading {
+    font-size: 1.5rem; /* Adjust font size */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-subtext {
+    color: #666;
+    font-size: 0.9rem; /* Adjust font size */
+    margin-bottom: 15px;
+}
+
+.form-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-label {
+    font-size: 0.9rem; /* Adjust font size for labels */
+    color: #333;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Adjust font size for inputs */
+    width: 100%; /* Full width */
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 150px;
+}
+
+.payment-info {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem; /* Adjust font size */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 760px) {
+    .home-container {
+        height: 120vh; /* Full viewport height */
+        width: 100vw;
+    }
+
+    .overlay {
+        height: 100%; /* Full height for overlay */
+    }
+
+    .content {
+        padding: 20px; /* Ensure consistent padding */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        justify-content: center; /* Center vertically */
+        margin-top: 100px;
+    }
+
+    .text-section {
+        max-width: 90%; /* Full width for text section */
+        padding: 0; /* Remove padding */
+        text-align: center; /* Center text */
+        margin-top: -30px;
+    }
+
+    .main-heading {
+        font-size: 2rem; /* Smaller font size */
+        margin-bottom: 15px; /* Adjust bottom margin */
+    }
+
+    .form-section {
+        width: 90vw; /* Use 90% of the viewport width */
+        padding: 20px; /* Consistent padding */
+        margin-top: 40px;
+    }
+
+    .form-heading {
+        font-size: 1.4rem; /* Smaller heading */
+    }
+
+    .form-subtext {
+        font-size: 0.8rem; /* Adjust font size for subtext */
+    }
+
+    .form-label {
+        font-size: 0.8rem; /* Smaller label font */
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: 0.8rem; /* Smaller input font */
+    }
+
+    .payment-info {
+        font-size: 0.8rem; /* Adjust payment info font size */
+    }
+}
+
+@media(min-width:780px) and (max-width:1050px){
+    .content{
+        width: 100vw;
+        height: auto;
+        margin-top: 500px;
+    }
+    .form-section{
+        height: 30vh;
+    }
+}

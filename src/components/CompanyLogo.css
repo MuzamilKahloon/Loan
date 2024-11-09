@@ -1,0 +1,31 @@
+.company-logo-container {
+    display: flex;
+    width: 70%;
+    overflow-x: hidden;
+    justify-content: space-around; /* Adjust spacing as needed */
+    margin-bottom: 50px;
+    margin-left: 125px;
+  }
+  
+  .company-logo-container img {
+    width: 260px; /* Adjust width as needed */
+    height: 130px;
+  }
+  @media(max-width:760px){
+    .company-logo-container{
+      width: 65vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      margin-left: 0px;
+    }
+  }
+
+  @media(min-width:780px) and (max-width:1050px){
+    .company-logo-container{
+      width: 65vw;
+      height: auto;
+      overflow-x:hidden;
+    }
+  }

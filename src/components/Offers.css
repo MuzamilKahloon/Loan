@@ -1,0 +1,123 @@
+.offers-container {
+  text-align: center;
+  width: 100%; /* Avoids overflow */
+  height: auto;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+.offers-container h2::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #20b2aa;
+  margin: 10px auto 0;
+}
+
+.offers-container h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.offers-container p {
+  color: #7a7a7a;
+  margin-bottom: 40px;
+}
+
+.offers {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.offer-card {
+  background: linear-gradient(to bottom, #5566ff, #0044ff); /* Updated color scheme */
+  color: white;
+  padding: 30px;
+  width: 320px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+.icon {
+  margin-bottom: 25px;
+}
+
+.offer-card h3 {
+  font-size: 1.7em;
+  margin: 10px 0;
+}
+
+.offer-card h4 {
+  font-size: 1.4em;
+  color: #ffddc1;
+  margin: 10px 0;
+}
+
+.offer-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.offer-card ul li {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #fcefe8;
+}
+
+.apply-button {
+  background-color: #7ce7ff;
+  color: #000000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #5ed2ff; /* Darker shade for hover effect */
+}
+
+/* Responsive Styles */
+@media(max-width: 760px) {
+  .offers {
+      flex-direction: column; /* Stacks cards vertically on smaller screens */
+      align-items: center;
+      gap: 20px;
+      width: 100vw;
+  }
+
+  .offer-card {
+      width: 90%; /* Adjusts width to fit smaller screens */
+      height: auto; /* Adapts height based on content */
+      padding: 20px;
+      margin-left: -100px;
+  }
+
+  .offers-container h2 {
+      font-size: 1.8em;
+  }
+
+  .offers-container p {
+      font-size: 1rem;
+  }
+}
+
+@media(min-width:780px) and (max-width:1050px){
+  .offers-container{
+    width: 100vw;
+    height: auto;
+    margin-top: -400px;
+  }
+}
